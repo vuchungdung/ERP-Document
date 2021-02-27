@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace ERP_Document.Models
+namespace ERP_Document.ViewModel
 {
-    [Table("Roles")]
-    public class Role
+    public class RoleViewModel
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required]
+
+        [Required(ErrorMessage ="Vui lòng nhập đầy đủ tên nhóm quyền!")]
         public string Name { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Vui lòng nhập đầy đủ mô tả nhóm quyền!")]
         [MaxLength(250)]
         public string Description { get; set; }
-
     }
 }

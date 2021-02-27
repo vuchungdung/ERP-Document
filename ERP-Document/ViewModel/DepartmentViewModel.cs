@@ -9,9 +9,9 @@ namespace ERP_Document.ViewModel
     public class DepartmentViewModel
     {
         public int DepartmentId { get; set; }
-        [Required(ErrorMessage ="Vui lòng nhập đủ thông tin")]
+        [Required(ErrorMessage ="Vui lòng nhập thông tin tên phòng ban!")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Vui lòng nhập đủ thông tin")]
+        [Required(ErrorMessage = "Vui lòng nhập thông tin mô tả chi tiết phòng ban!")]
         public string Description { get; set; }
     }
 }
