@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="box box-warning">
+    <div class="box-header with-border">
+        <h3 class="box-title">Thêm phòng ban</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        <form role="form">
+            <div class="form-group">
+                <label>Tên phòng ban</label>
+                <input type="text" class="form-control" placeholder="Nhập tên phòng ban mới" required>
+            </div>
+            <div class="form-group">
+                <label>Mô tả chi tiết</label>
+                <input type="text" class="form-control" placeholder="Mô tả chi tiết" required>
+            </div>
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Thêm mới</button>
+                <a href="/Department/Index" class="btn btn-default">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
