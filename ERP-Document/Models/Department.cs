@@ -13,6 +13,7 @@ namespace ERP_Document.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int DepartmentId { get; set; }
+        [Required]
         public string Name { get; set; }
         [MaxLength(255)]
         public string Description { get; set; }

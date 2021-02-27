@@ -14,11 +14,17 @@ namespace ERP_Document.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Email { get; set; }
+        [Required]
         public string Address { get; set; }
+        [Required]
         public string Phone { get; set; }
+        [Required]
         public string Username { get; set; }
+        [Required]
         public string Password { get; set; }
         public int DepartmentId { get; set; }
         public UserStatus Status { get; set; }

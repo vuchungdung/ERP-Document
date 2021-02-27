@@ -141,6 +141,10 @@
     <Compile Include="Migrations\202102270936299_version_1.0.0.designer.cs">
       <DependentUpon>202102270936299_version_1.0.0.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102271055150_version_1.0.1.cs" />
+    <Compile Include="Migrations\202102271055150_version_1.0.1.designer.cs">
+      <DependentUpon>202102271055150_version_1.0.1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\Command.cs" />
@@ -7064,6 +7068,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202102270936299_version_1.0.0.resx">
       <DependentUpon>202102270936299_version_1.0.0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102271055150_version_1.0.1.resx">
+      <DependentUpon>202102271055150_version_1.0.1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -13,9 +13,13 @@ namespace ERP_Document.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int FileId { get; set; }
+        [Required]
         public string FileName { get; set; }
+        [Required]
         public string FileSize { get; set; }
+        [Required]
         public string FileType { get; set; }
+        [Required]
         public string FilePath { get; set; }
     }
 }

@@ -39,13 +39,14 @@ namespace ERP_Document.Controllers
                 model.Name = viewModel.Name;
                 model.Description = viewModel.Description;
                 _db.Departments.Add(model);
-                if (_db.SaveChanges() < 0)
+                if (_db.SaveChanges() > 0)
                 {
+                    
                     return RedirectToAction("Index");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Thêm user không thành công");
+                    ModelState.AddModelError("", "Thêm phòng ban không thành công");
                 }
             }
             return View("Create");
